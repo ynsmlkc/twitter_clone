@@ -1,4 +1,7 @@
 import classNames from "classnames"
+import store from "../store"
+
+const states = store.getState()
 
 export const mainMenu = [
     {
@@ -105,7 +108,6 @@ export const mainMenu = [
     {
         path: '/lists',
         title:'Listeler',
-        notification: 4,
         icon: {
             active: (
                 <svg viewBox="0 0 24 24" width={26.25} height={26.25} className="block">
@@ -131,7 +133,7 @@ export const mainMenu = [
     {
         path: '/locations',
         title:'Yer İşaretleri',
-        notification: 4,
+        
         icon: {
             active: (
                 <svg viewBox="0 0 24 24" width={26.25} height={26.25} className="block">
@@ -153,7 +155,7 @@ export const mainMenu = [
     {
         path: '/onaylanmıs',
         title:'Onaylanmış',
-        notification: 4,
+        
         icon: {
             active: (
                 <svg viewBox="0 0 24 24" width={26.25} height={26.25} className="block">
@@ -173,7 +175,9 @@ export const mainMenu = [
             }
     },
     {
-        path: '/profile',
+        path: () => {
+           return `/${store.getState()?.auth?.currenAccount?.username}`
+        },
         title:'Profil',
         
         icon: {
@@ -193,5 +197,6 @@ export const mainMenu = [
                )
             }
     },
+    
     
 ]

@@ -4,6 +4,11 @@ import Notification from "../Pages/notifications"
 import Explore from "../Pages/explore"
 import NotFound from "../Pages/notfound"
 import MainLayout from "../layout/main"
+import Profile from "../Pages/profile"
+import Messages from "../Pages/Messages"
+import Lists from "../Pages/lists"
+import Bookmarks from "../Pages/locations"
+import Locations from "../Pages/locations"
 const routes = createBrowserRouter([
     {
         path: '/',
@@ -20,6 +25,23 @@ const routes = createBrowserRouter([
             {
                 path: 'notifications',
                 element: <Notification/>
+            },
+            {
+                path: 'messages',
+                element: <Messages/>
+            },
+            {
+                path: 'lists',
+                element: <Lists/>
+            },
+            {
+                path: 'locations',
+                element: <Locations/>
+            },
+            { 
+                path: ':slug',
+                element: <Profile/>
+
             },
             {
                 path: '*',
