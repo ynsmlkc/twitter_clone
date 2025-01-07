@@ -200,3 +200,68 @@ export const mainMenu = [
     
     
 ]
+
+export const topics =[
+    {
+        title: 'Türkite tarihinde gündemde',
+        topic: {
+            type: 'tag',
+            value: 'DilanPolat',
+        }
+    },
+    {
+        title: 'Türkite tarihinde gündemde',
+        topic: {
+            type: 'query',
+            value: 'Starlink'
+        },
+        postCount: 13770
+    },
+    {
+        title: 'Türkite tarihinde gündemde',
+        topic: {
+            type: 'tag',
+            value: 'DilanPolat',
+        }
+    },
+    {
+        title: 'Türkite tarihinde gündemde',
+        topic: {
+            type: 'query',
+            value: 'Starlink'
+        },
+        postCount: 13770
+    },
+    {
+        title: 'Türkite tarihinde gündemde',
+        topic: {
+            type: 'tag',
+            value: 'DilanPolat',
+        }
+    },
+    {
+        title: 'Türkite tarihinde gündemde',
+        topic: {
+            type: 'query',
+            value: 'Starlink'
+        },
+        postCount: 13770
+    },
+    {
+        title: 'Türkite tarihinde gündemde',
+        topic: {
+            type: 'tag',
+            value: 'DilanPolat',
+        }
+    },
+    {
+        title: 'Türkite tarihinde gündemde',
+        topic: {
+            type: 'query',
+            value: 'Starlink'
+        },
+        postCount: 13770
+    },
+    
+    
+]
