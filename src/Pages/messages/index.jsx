@@ -1,5 +1,5 @@
 
-export default function Messages(){
+export default function TempMessages(){
    return(
     <div>
         Mesajlar componenti

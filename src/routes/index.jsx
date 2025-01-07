@@ -5,9 +5,8 @@ import Explore from "../Pages/explore"
 import NotFound from "../Pages/notfound"
 import MainLayout from "../layout/main"
 import Profile from "../Pages/profile"
-import Messages from "../Pages/Messages"
+import TempMessages from "../Pages/Messages"
 import Lists from "../Pages/lists"
-import Bookmarks from "../Pages/locations"
 import Locations from "../Pages/locations"
 const routes = createBrowserRouter([
     {
@@ -28,7 +27,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: 'messages',
-                element: <Messages/>
+                element: <TempMessages/>
             },
             {
                 path: 'lists',
