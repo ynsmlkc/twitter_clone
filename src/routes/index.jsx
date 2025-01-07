@@ -5,7 +5,7 @@ import Explore from "../Pages/explore"
 import NotFound from "../Pages/notfound"
 import MainLayout from "../layout/main"
 import Profile from "../Pages/profile"
-import TempMessages from "../Pages/Messages"
+import TempMessages from "../Pages/messages"
 import Lists from "../Pages/lists"
 import Locations from "../Pages/locations"
 const routes = createBrowserRouter([
