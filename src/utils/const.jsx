@@ -106,26 +106,31 @@ export const mainMenu = [
     },
     
     {
-        path: '/lists',
-        title:'Listeler',
+        path: '/grok',
+        title:'Grok',
         icon: {
             active: (
-                <svg viewBox="0 0 24 24" width={26.25} height={26.25} className="block">
-                     
-                     <path fill="#fff" clip-rule="evenodd" d="M6 2h12c2.21 0 4 1.79 4 4v12c0 2.21-1.79 4-4 4H6c-2.21 0-4-1.79-4-4V6c0-2.21 1.79-4 4-4zm.643 15.8l8.109-11.58h2.515L9.158 17.8H6.643z" fill-rule="evenodd">
-
-                     </path>
-       
-               
-                
+                <svg viewBox="0 0 24 24" width={26.25} height={26.25} className="block" >
+                    <g>
+                        <g clip-path="url(#6-clip0_3304_259)">
+                            <path fill="currentColor" clip-rule="evenodd" d="M4 0C1.79 0 0 1.79 0 4v16c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V4c0-2.21-1.79-4-4-4H4zm5.982 11.941L16.58 2.55h3.82l-8.509 12.109-1.91-2.718zm-6.678-2.71l8.587 12.219h3.816L7.121 9.23H3.304zm3.813 6.786L3.3 21.45h3.819l1.908-2.715-1.91-2.718zm10.155-7.656V21.45H20.4V3.909L17.272 8.36z" fill-rule="evenodd">
+                            </path>
+                                </g>
+                                <defs>
+                                    <clipPath id="6-clip0_3304_259">
+                                        <path d="M0 0h24v24H0z" fill="#fff">
+                                            </path>
+                                            </clipPath>
+                                            </defs>
+                                            </g>
                 </svg>
                ),
             passive: (
-                <svg viewBox="0 0 24 24" width={26.25} height={26.25} className="block">
-                      
-
-                      <path fill="#e7e9ea" d="M18 4.1H6c-1.05 0-1.9.85-1.9 1.9v12c0 1.05.85 1.9 1.9 1.9h12c1.05 0 1.9-.85 1.9-1.9V6c0-1.05-.85-1.9-1.9-1.9zM6 2h12c2.21 0 4 1.79 4 4v12c0 2.21-1.79 4-4 4H6c-2.21 0-4-1.79-4-4V6c0-2.21 1.79-4 4-4z"></path>
-                      
+                <svg viewBox="0 0 24 24" width={26.25} height={26.25} className="block" >
+                  
+                        <path fill="#e7e9ea" d="M2.205 7.423L11.745 21h4.241L6.446 7.423H2.204zm4.237 7.541L2.2 21h4.243l2.12-3.017-2.121-3.02zM16.957 0L9.624 10.435l2.122 3.02L21.2 0h-4.243zm.767 6.456V21H21.2V1.51l-3.476 4.946z" />
+                        
+                            
                 </svg>
                )
             }
@@ -153,8 +158,48 @@ export const mainMenu = [
             }
     },
     {
+        path: '/jobs',
+        title:'Jobs',
+        
+        icon: {
+            active: (
+                <svg viewBox="0 0 24 24" width={26.25} height={26.25} className="block">
+                 
+                        <path fill="#fff" d="M19.5 6H17V4.5C17 3.12 15.88 2 14.5 2h-5C8.12 2 7 3.12 7 4.5V6H4.5C3.12 6 2 7.12 2 8.5v10C2 19.88 3.12 21 4.5 21h15c1.38 0 2.5-1.12 2.5-2.5v-10C22 7.12 20.88 6 19.5 6zM9 4.5c0-.28.23-.5.5-.5h5c.28 0 .5.22.5.5V6H9V4.5zm11 14c0 .28-.22.5-.5.5h-15c-.27 0-.5-.22-.5-.5v-3.04c.59.35 1.27.54 2 .54h5v1h2v-1h5c.73 0 1.41-.19 2-.54v3.04zm0-6.49c0 1.1-.9 1.99-2 1.99h-5v-1h-2v1H6c-1.1 0-2-.9-2-2V8.5c0-.28.23-.5.5-.5h15c.28 0 .5.22.5.5v3.51z" />
+                            
+                </svg>
+               ),
+            passive: (
+                <svg viewBox="0 0 24 24" width={26.25} height={26.25} className="block">
+                 
+                        <path fill="#e7e9ea" d="M19.5 6H17V4.5C17 3.12 15.88 2 14.5 2h-5C8.12 2 7 3.12 7 4.5V6H4.5C3.12 6 2 7.12 2 8.5v10C2 19.88 3.12 21 4.5 21h15c1.38 0 2.5-1.12 2.5-2.5v-10C22 7.12 20.88 6 19.5 6zM9 4.5c0-.28.23-.5.5-.5h5c.28 0 .5.22.5.5V6H9V4.5zm11 14c0 .28-.22.5-.5.5h-15c-.27 0-.5-.22-.5-.5v-3.04c.59.35 1.27.54 2 .54h5v1h2v-1h5c.73 0 1.41-.19 2-.54v3.04zm0-6.49c0 1.1-.9 1.99-2 1.99h-5v-1h-2v1H6c-1.1 0-2-.9-2-2V8.5c0-.28.23-.5.5-.5h15c.28 0 .5.22.5.5v3.51z" />
+                            
+                </svg>
+               )
+            }
+    },
+    {
+        path: '/community',
+        title:'Topluluklar',
+        
+        icon: {
+            active: (
+                <svg viewBox="0 0 24 24" width={26.25} height={26.25} className="block" >
+                   
+                        <path fill="#e7e9ea" d="M7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-1.608 1.732-2.762 4.389-2.869 8.248l-.03 1.083zM9.616 9.27C10.452 8.63 11 7.632 11 6.5 11 4.57 9.433 3 7.5 3S4 4.57 4 6.5c0 1.132.548 2.13 1.384 2.77.589.451 1.317.73 2.116.73s1.527-.279 2.116-.73zm6.884 1.726c-3.264 0-6.816 2.358-7 8.977L9.471 21h14.057l-.029-1.027c-.184-6.618-3.736-8.977-7-8.977zm2.116-1.726C19.452 8.63 20 7.632 20 6.5 20 4.57 18.433 3 16.5 3S13 4.57 13 6.5c0 1.132.548 2.13 1.384 2.77.589.451 1.317.73 2.116.73s1.527-.279 2.116-.73z"/>
+                </svg>
+               ),
+            passive: (
+                <svg viewBox="0 0 24 24" width={26.25} height={26.25} className="block" >
+                   
+                        <path fill="#e7e9ea" d="M7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-1.608 1.732-2.762 4.389-2.869 8.248l-.03 1.083zM9.616 9.27C10.452 8.63 11 7.632 11 6.5 11 4.57 9.433 3 7.5 3S4 4.57 4 6.5c0 1.132.548 2.13 1.384 2.77.589.451 1.317.73 2.116.73s1.527-.279 2.116-.73zm6.884 1.726c-3.264 0-6.816 2.358-7 8.977L9.471 21h14.057l-.029-1.027c-.184-6.618-3.736-8.977-7-8.977zm2.116-1.726C19.452 8.63 20 7.632 20 6.5 20 4.57 18.433 3 16.5 3S13 4.57 13 6.5c0 1.132.548 2.13 1.384 2.77.589.451 1.317.73 2.116.73s1.527-.279 2.116-.73z"/>
+                </svg>
+               )
+            }
+    },
+    {
         path: '/onaylanmıs',
-        title:'Onaylanmış',
+        title:'Premium',
         
         icon: {
             active: (
@@ -170,6 +215,26 @@ export const mainMenu = [
                            
                     <path fill="#e7e9ea" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
                 
+                </svg>
+               )
+            }
+    },
+    {
+        path: '/organizations',
+        title:'Onaylı Kuruluşlar',
+        icon: {
+            active: (
+                <svg viewBox="0 0 24 24" width={26.25} height={26.25} className="block">
+                  
+                    <path fill="#fff" d="M7.323 2h11.443l-3 5h6.648L6.586 22.83 7.847 14H2.523l4.8-12zm1.354 2l-3.2 8h4.676l-.739 5.17L17.586 9h-5.352l3-5H8.677z"/>
+                            
+                </svg>
+               ),
+            passive: (
+                <svg viewBox="0 0 24 24" width={26.25} height={26.25} className="block">
+                  
+                    <path fill="#fff" d="M7.323 2h11.443l-3 5h6.648L6.586 22.83 7.847 14H2.523l4.8-12zm1.354 2l-3.2 8h4.676l-.739 5.17L17.586 9h-5.352l3-5H8.677z"/>
+                            
                 </svg>
                )
             }
@@ -221,47 +286,259 @@ export const topics =[
         title: 'Türkite tarihinde gündemde',
         topic: {
             type: 'tag',
-            value: 'DilanPolat',
+            value: 'ElonMusk',
         }
     },
     {
         title: 'Türkite tarihinde gündemde',
         topic: {
             type: 'query',
-            value: 'Starlink'
+            value: 'Tesla'
         },
-        postCount: 13770
+        postCount: 2783770
     },
     {
         title: 'Türkite tarihinde gündemde',
         topic: {
             type: 'tag',
-            value: 'DilanPolat',
+            value: 'KutaySarı',
         }
     },
+]
+
+export const foryours = [
     {
-        title: 'Türkite tarihinde gündemde',
-        topic: {
-            type: 'query',
-            value: 'Starlink'
-        },
-        postCount: 13770
+        title: 'Spor · Gündemdekiler',
+        value: 'Penaltı',
+        postCount: 42853
     },
     {
-        title: 'Türkite tarihinde gündemde',
-        topic: {
-            type: 'tag',
-            value: 'DilanPolat',
-        }
+        title: 'Futbol tarihinde gündemde',
+        value: 'Kırmızı',
+        postCount:30452
     },
     {
-        title: 'Türkite tarihinde gündemde',
-        topic: {
-            type: 'query',
-            value: 'Starlink'
-        },
-        postCount: 13770
+        title: 'Spor · Gündemdekiler',
+        value: 'Ertem',
+        postCount:3031
     },
-    
-    
+    {
+        title: 'İstanbul tarihinde gündemde',
+        value: 'Şeyda Yılmaz',
+        postCount:215334
+    },
+    {
+        title: 'Futbol tarihinde gündemde',
+        value: 'Abdulkerim Bardakçı',
+        postCount:1907
+    },
+    {
+        title: 'Spor · Gündemdekiler',
+        value: 'Çağdaş Atan',
+        postCount:14572
+    },
+    {
+        title: 'Spor · Gündemdekiler',
+        value: 'Pizza Hut',
+        postCount:30782
+    },
+    {
+        title: 'Türk oyuncular · Gündemdekiler',
+        value: 'Burcu Biricik',
+        postCount: 27255
+    },
+    {
+        title: 'Türkiye tarihinde gündemde',
+        value: 'KISLASIZ BEDELLI ASKERLIK',
+        postCount:17908
+    },
+    {
+        title: 'Siyaset · Gündemdekiler',
+        value: 'ÖcalanKadar SuçluDeğiliz',
+        postCount:15674
+    },
+]
+
+
+export const gundems = [
+    {
+        title: '1 · Türkiye tarihinde Gündemdekiler',
+        value: 'Edip Akbayram',
+        postCount: 42853
+    },
+    {
+        title: '2 · Spor · Gündemdekiler',
+        value: '#GSvİBFK',
+        postCount:30452
+    },
+    {
+        title: '3 · Türkiye tarihinde Gündemdekiler',
+        value: 'Selim İleri',
+        postCount:3031
+    },
+    {
+        title: '4 · Türkiye tarihinde Gündemdekiler',
+        value: 'kislasiz bedelli askerlik',
+        postCount:215334
+    },
+    {
+        title: '5 · Türkiye tarihinde Gündemdekiler',
+        value: '$claim',
+        postCount:1907
+    },
+    {
+        title: '6 · Türkiye tarihinde Gündemdekiler',
+        value: 'kayyımieyhoda adaletsağla',
+        postCount:14572
+    },
+    {
+        title: '7 · Türkiye tarihinde Gündemdekiler',
+        value: '#Perşembe',
+        postCount:30782
+    },
+    {
+        title: '8 · Spor · Gündemdekiler',
+        value: 'Batshuayi',
+        postCount: 27255
+    },
+    {
+        title: '9 · Beşiktaş J.K. · Gündemdekiler',
+        value: 'Çağdaş Atan',
+        postCount:17908
+    },
+    {
+        title: '10 · Siyaset · Gündemdekiler',
+        value: '#VatandaşKademeBekliyor',
+        postCount:15674
+    },
+    {
+        title: '11 · Türkiye tarihinde Gündemdekiler',
+        value: 'Los Angeles',
+        postCount:30782
+    },
+    {
+        title: '12 · Türkiye tarihinde Gündemdekiler',
+        value: 'Demine',
+        postCount:70782
+        
+    },
+    {
+        title: '13 · Türkiye tarihinde Gündemdekiler',
+        value: 'nusaybin iyovexdijital',
+        postCount:92782
+        
+    },
+    {
+        title: '14 · Spor · Gündemdekiler',
+        value: 'Ali Koç',
+        postCount:30782
+        
+    },
+
+]
+
+export const news = [
+    {
+        title: 'Siyaset tarihinde gündemde',
+        value: 'GenelAf Gerçekleri',
+        postCount: 11283
+    },
+    {
+        title: 'Siyaset tarihinde gündemde',
+        value: 'AK Parti Diyarbakır 8',
+        postCount: 3821
+    },
+    {
+        title: 'Siyaset tarihinde gündemde',
+        value: 'AdıAKParti',
+        postCount:5781
+    },
+    {
+        title: 'Teknoloji tarihinde gündemde',
+        value: 'Zuckerberg',
+        postCount: 477081
+    },
+    {
+        title: 'Siyaset tarihinde gündemde',
+        value: '#EngelliÖgretmenleriDuyanVarmı',
+        postCount:1907
+    },
+    {
+        title: 'İş dünyası ve finans tarihinde gündemde',
+        value: '#RCADE',
+        postCount:87091
+    },
+    {
+        title: 'Siyaset tarihinde gündemde',
+        value: 'Umudun',
+        postCount:5322
+    },
+    {
+        title: 'Siyaset tarihinde gündemde',
+        value: '#KartınRenginiKademeBelirler',
+        postCount: 36701
+    },
+]
+
+export const sports = [
+    {
+        title: 'Spor tarihinde gündemde',
+        value: 'Fatih Altaylı',
+        postCount: 18783
+    },
+    {
+        title: 'Spor tarihinde gündemde',
+        value: 'Onur',
+        postCount: 3821
+    },
+    {
+        title: 'Spor tarihinde gündemde',
+        value: 'Amedspor',
+        postCount:2211
+    },
+    {
+        title: 'Spor tarihinde gündemde',
+        value: 'Müsavat Dervişoğlu',
+        postCount: 8222
+    },
+    {
+        title: 'Spor tarihinde gündemde',
+        value: 'Şener Şen',
+        postCount: 9192
+    },
+    {
+        title: 'Spor tarihinde gündemde',
+        value: 'Bodrum FK',
+        postCount:2173
+    },
+    {
+        title: 'Spor tarihinde gündemde',
+        value: '#KaraborsaSaray',
+        postCount: 7838
+    },
+    {
+        title: 'Spor tarihinde gündemde',
+        value: 'Ankaragücü',
+        postCount: 1506
+    },
+    {
+        title: 'Spor tarihinde gündemde',
+        value: '#BeşiktaşınMaçıVar',
+        postCount: 3751
+    },
+    {
+        title: 'Spor tarihinde gündemde',
+        value: 'Ahmet Çalık',
+        postCount: 11721
+    },
+    {
+        title: 'Spor tarihinde gündemde',
+        value: 'Juventus',
+        postCount: 21783
+    },
+    {
+        title: 'Spor tarihinde gündemde',
+        value: '#BJKvBDR',
+        postCount: 2953
+    },
 ]

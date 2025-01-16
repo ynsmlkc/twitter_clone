@@ -6,8 +6,11 @@ import NotFound from "../Pages/notfound"
 import MainLayout from "../layout/main"
 import Profile from "../Pages/profile"
 import TempMessages from "../Pages/messages"
-import Lists from "../Pages/lists"
+
 import Locations from "../Pages/locations"
+import Grok from "../Pages/lists"
+import ExploreLayout from "../layout/explore"
+
 const routes = createBrowserRouter([
     {
         path: '/',
@@ -30,8 +33,8 @@ const routes = createBrowserRouter([
                 element: <TempMessages/>
             },
             {
-                path: 'lists',
-                element: <Lists/>
+                path: 'grok',
+                element: <Grok/>
             },
             {
                 path: 'locations',
@@ -48,7 +51,16 @@ const routes = createBrowserRouter([
             }
         ]
     },
-    
+    {
+        path: '/explore',
+        element: <ExploreLayout />,
+        children: [
+            {
+                index: true,
+                element: <Explore />
+            }
+        ]
+    }
 ])
 
 export default routes

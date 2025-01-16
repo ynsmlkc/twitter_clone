@@ -1,8 +1,9 @@
 
+
 export default function TempMessages(){
    return(
     <div>
-        Mesajlar componenti
+        mesalar componenti
     </div>
     )
 }

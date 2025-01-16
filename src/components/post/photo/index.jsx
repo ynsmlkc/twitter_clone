@@ -14,8 +14,8 @@ export default function Photo( {photos} ){
         case 2:
           return(
              <div className="mt-3 grid grid-cols-2 gap-0.5 h-[288px]">
-                 <img src={photos[0]} alt="" className="h-full w-full object-cover rounded-2xl"/>
-                 <img src={photos[1]} alt="" className="h-full w-full object-cover rounded-2xl"/>
+                 <img src={photos[0]} alt="" className="h-[288px] w-full object-cover rounded-2xl"/>
+                 <img src={photos[1]} alt="" className="h-[288px] w-full object-cover rounded-2xl"/>
              </div>
           )
            

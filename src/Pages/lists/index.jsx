@@ -1,8 +1,8 @@
 
-export default function Lists(){
+export default function Grok(){
    return(
     <div>
-        Lists component
+        Grok component
     </div>
     )
 }

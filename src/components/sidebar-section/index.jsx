@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export default function SidebarSection({title, children}, more) {
     return(
-        <section className="bg-[#16181c] overflow-hidden mb-4 rounded-xl border border-[#2f3336]">
+        <section className="bg-black overflow-hidden mb-4 rounded-xl border border-[#2f3336]">
             <h5 className="py-3 px-4 text-xl font-extrabold leading-6 flex items-center text-[#e7e9ea] ">
                {title} 
             </h5>

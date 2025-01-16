@@ -1,20 +1,27 @@
-import Premium from "./premium";
-import Topics from "./topics";
-import Search from "./search";
-import WhoFollow from "./who-follow";
-import Footer from "./footer";
-import StickyBox from "react-sticky-box";
+import { useLocation } from 'react-router-dom'
+import Search from './search'
+import Premium from './premium'
+import Topics from './topics'
+import WhoFollow from './who-follow'
+import Footer from './footer'
 
 export default function RightBar() {
-   return(
-    <StickyBox className="self-start" offsetBottom={80}>
+    const location = useLocation()
+    const isExplorePage = location.pathname === '/explore'
+
+    return (
         <aside className="w-[350px] mr-2.5">
-         <Search/>
-         <Premium/>
-         <Topics/>
-         <WhoFollow/>
-         <Footer/>
+            <div className="flex flex-col gap-3 sticky top-0 px-6">
+                {!isExplorePage && (
+                    <>
+                        <Search />
+                        <Premium />
+                        <Topics />
+                    </>
+                )}
+                <WhoFollow />
+                {!isExplorePage && <Footer />}
+            </div>
         </aside>
-    </StickyBox>
-   )
+    )
 }
