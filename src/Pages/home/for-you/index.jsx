@@ -15,7 +15,11 @@ export default function ForYou() {
 					setPosts(prev => [...prev, ...postData])
 				}
 			}}>
-			{posts.map((post) => <Post post={post} key={post.id} />)}
+			{posts.map(post => (
+				<div key={post.id}>
+					<Post post={post} />
+				</div>
+			))}
 		</WindowVirtualizer>
 	)
 }

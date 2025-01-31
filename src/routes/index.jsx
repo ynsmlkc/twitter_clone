@@ -21,10 +21,6 @@ const routes = createBrowserRouter([
                 element: <Home/>
             },
             {
-                path: 'explore',
-                element: <Explore/>
-            },
-            {
                 path: 'notifications',
                 element: <Notification/>
             },
@@ -53,11 +49,11 @@ const routes = createBrowserRouter([
     },
     {
         path: '/explore',
-        element: <ExploreLayout />,
+        element: <ExploreLayout/>,
         children: [
             {
                 index: true,
-                element: <Explore />
+                element: <Explore/>
             }
         ]
     }

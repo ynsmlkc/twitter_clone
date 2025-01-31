@@ -1,6 +1,6 @@
 export const posts = [
     {
-        id: '1708632465282150796',
+        id: '1',
         type: 'poll',
         content: `PROTOTURK'un paylaştığı videoları seviyor musunuz?
 Bu anket ders esnasında sorulmuştur.`,
@@ -26,7 +26,7 @@ Bu anket ders esnasında sorulmuştur.`,
         }
     },
     {
-        id: '1708632465282150796',
+        id: '2',
         type: 'photo',
         content: `Toplu günaydın, ben her sabah spora devam ama her gün post atmıyorum artık, max 4 günde bir atarım çünkü en fazla 4 foto paylaşılıyormuş 🤣`,
         photos: [
@@ -45,7 +45,7 @@ Bu anket ders esnasında sorulmuştur.`,
         }
     },
     {
-        id: '1708632465282150796',
+        id: '3',
         type: 'photo',
         content: `Imagination Land!`,
         photos: [
@@ -66,7 +66,7 @@ Bu anket ders esnasında sorulmuştur.`,
         }
     },
     {
-        id: '1708704613141270652',
+        id: '4',
         content: `Less than a week since OpenAI started rolling out ChatGPT vision.
 
 And people have been busy executing god-like tasks.
@@ -88,7 +88,7 @@ And people have been busy executing god-like tasks.
         }
     },
     {
-        id: '1708810187170087410',
+        id: '5',
         type: 'photo',
         content: `İstanbul'da Cumhuriyet'in 100. yılına özel, 100 gün boyunca Yerebatan Sarnıcı, Şerefiye Sarnıcı, Miniatürk ve Panorama 1453 Tarih Müzesi ücretsiz ziyaret edilebilecek.`,
         photos: [
@@ -109,7 +109,7 @@ And people have been busy executing god-like tasks.
         }
     },
     {
-        id: '1708707876628476134',
+        id: '6',
         type: 'photo',
         content: `OpenAI's latest DALL-E 3 model is officially available free to try on Bing.
 

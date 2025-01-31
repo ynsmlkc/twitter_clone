@@ -4,24 +4,53 @@ import Premium from './premium'
 import Topics from './topics'
 import WhoFollow from './who-follow'
 import Footer from './footer'
+import StickyBox from 'react-sticky-box'
+import Choose from './choose'
 
 export default function RightBar() {
-    const location = useLocation()
-    const isExplorePage = location.pathname === '/explore'
-
-    return (
-        <aside className="w-[350px] mr-2.5">
-            <div className="flex flex-col gap-3 sticky top-0 px-6">
-                {!isExplorePage && (
+    const location = useLocation() 
+    const Np = location.pathname === '/notifications'
+    const Home = location.pathname === '/'
+    const Explore = location.pathname === '/explore'
+    const Messages = location.pathname === '/messages'
+    
+    
+	return (
+		<StickyBox className="self-start" offsetBottom={80}>
+			<aside className="w-[350px] mr-2.5" >
+				<div>            
+                  {Np && (
                     <>
-                        <Search />
-                        <Premium />
-                        <Topics />
+                        <Search/>
+				        <Topics/>
+				        <WhoFollow/>
+				        <Footer/>
                     </>
-                )}
-                <WhoFollow />
-                {!isExplorePage && <Footer />}
-            </div>
-        </aside>
-    )
+                   )}
+                   {Home && (
+                    <>
+                        <Search/>
+                        <Premium/>
+				        <Topics/>
+				        <WhoFollow/>
+				        <Footer/>
+                    </>
+                   )}  
+                   {Explore && (
+                    <>
+				        <WhoFollow/>
+				        <Footer/>
+                    </>
+                   )} 
+                   
+                   {Messages && (
+                    <>
+                        <Choose/>
+                    </>
+                   )}
+                   
+                </div>
+			</aside>
+		</StickyBox>
+	)
 }

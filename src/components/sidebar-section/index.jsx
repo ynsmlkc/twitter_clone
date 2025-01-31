@@ -7,8 +7,8 @@ export default function SidebarSection({title, children}, more) {
             <h5 className="py-3 px-4 text-xl font-extrabold leading-6 flex items-center text-[#e7e9ea] ">
                {title} 
             </h5>
-            <div className="grid">
-                {children}
+            <div className="grid  ">
+                {children} 
             </div>
             {more && (
                 <Link to={more} className="h-[52px] flex items-center px-4 text-[15px] text-[#1d9bf0] transition-colors hover:bg-white/[0.03] ">
