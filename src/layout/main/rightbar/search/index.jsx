@@ -10,13 +10,13 @@ export default function Search() {
     })
 
     return (
-        <div ref={ref} className="min-h-[2rem] h-[3.313rem] mb-3 flex items-center sticky top-0 border border-[#71767b] rounded-full ">
+        <div ref={ref} className="min-h-[2rem] h-[3.313rem] mb-3 flex z-[20] items-center sticky top-0 rounded-full ">
             <div className="h-[3.313rem] flex items-center flex-1 relative">
                 <div className="w-full relative">
                     <input 
                         type="text"
                         placeholder="Ara"
-                        className="w-full h-[43px] rounded-full pl-14 pr-4 bg-black outline-none focus:bg-black focus:border focus:border-[#1d9bf0] focus:outline-none"
+                        className="w-full h-[43px] rounded-full pl-14 pr-4 bg-black outline-none border border-[#71767b] focus:border focus:border-[#1d9bf0] focus:outline-none"
                         value={query}
                         onChange={e => setQuery(e.target.value)}
                         onFocus={() => setFocus(true)}

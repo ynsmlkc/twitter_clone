@@ -20,6 +20,11 @@ const routes = createBrowserRouter([
                 index: true,
                 element: <Home/>
             },
+            { 
+                path: ':explore',
+                element: <Explore/>
+
+            },
             {
                 path: 'notifications',
                 element: <Notification/>
@@ -47,16 +52,6 @@ const routes = createBrowserRouter([
             }
         ]
     },
-    {
-        path: '/explore',
-        element: <ExploreLayout/>,
-        children: [
-            {
-                index: true,
-                element: <Explore/>
-            }
-        ]
-    }
 ])
 
 export default routes
